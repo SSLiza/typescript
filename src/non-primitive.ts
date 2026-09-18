@@ -36,9 +36,23 @@ console.log(destination[2]); // 1000
 
 //reference type
 
+// let user: {
+//     firstName: "Bob"; //value as type
+//     midname?: string; //optional type 
+//     lastName: string;
+//     age: number;
+//     isStudent: boolean
+// } = {
+//     // firstName: "Alice"
+//     // midname: "B.",
+//     lastName: "Smith",
+//     age: 30,
+//     isStudent: true
+// } 
+
 let user: {
-    firstName: string;
-    midname: string;
+    readonly firstName: string; 
+    midname?: string; //optional type 
     lastName: string;
     age: number;
     isStudent: boolean
@@ -48,4 +62,9 @@ let user: {
     lastName: "Smith",
     age: 30,
     isStudent: true
-} 
+}
+
+// user.firstName = "Johnson"; // error: Cannot assign to 'firstName' because it is a read-only property.
+// user.age = "thirty"; // error
+
+console.log(user);
