@@ -22,4 +22,8 @@ const poorUser = {
     }
 };
 console.log(poorUser.addBalance(100));
+const arr = [1, 2, 3, 4, 5];
+const sum = arr.map((elem) => {
+    return elem * 2;
+});
 //# sourceMappingURL=function.js.map
