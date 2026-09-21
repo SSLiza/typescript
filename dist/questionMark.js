@@ -13,4 +13,15 @@ console.log(theme); // Output: "default theme"
 const UserName = null;
 const name = UserName ?? "default name";
 console.log(name); // Output: "default name"
+//optional chaining operator : used to access properties of an object that may be null or undefined
+const user = {
+    name: "John Doe",
+    address: {
+        street: "123 Main St",
+        city: "Anytown",
+        country: "USA"
+    }
+};
+const street = user?.address?.street;
+console.log(street); // Output: "123 Main St"
 //# sourceMappingURL=questionMark.js.map
